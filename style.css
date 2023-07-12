@@ -616,6 +616,10 @@ video {
   top: 100%;
 }
 
+.-top-2 {
+  top: -0.5rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -764,10 +768,6 @@ video {
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-\[400px\] {
-  width: 400px;
 }
 
 .w-\[80\%\] {
@@ -1421,6 +1421,10 @@ video {
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-\[400px\] {
+    width: 400px;
   }
 
   .md\:w-fit {
