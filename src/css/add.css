@@ -1,0 +1,28 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a,
+img,
+a:hover,
+a:active,
+a:focus,
+input:hover,
+input:active,
+input:focus,
+button:hover,
+button:active,
+button:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#menu.expand {
+  width: calc(100% - 72px);
+}
+
+.splide__arrow{
+    
+    color:#7dd3fc;
+    background-color: #7dd3fc;
+}
+/**/
