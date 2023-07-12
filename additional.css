@@ -586,3 +586,12 @@ h4 {
   border-width: 0 2px 2px 0;
   content: "";
 }
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0;
+}
