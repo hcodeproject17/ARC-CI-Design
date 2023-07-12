@@ -87,7 +87,7 @@ function loader() {
 
 function showPage() {
   document.getElementById("logo").classList.add("animate-fade_up");
-  document.querySelector("main").style.display = "block";
+  
   document.getElementById("isi_hero").classList.add("animate-fade_up_d2");
   $(".loader_wrap").fadeOut(1000, function () {
     
