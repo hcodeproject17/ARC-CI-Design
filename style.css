@@ -616,10 +616,6 @@ video {
   top: 100%;
 }
 
-.-top-2 {
-  top: -0.5rem;
-}
-
 .-z-0 {
   z-index: 0;
 }
@@ -1222,6 +1218,11 @@ video {
 
 .invert {
   --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.saturate-\[\.7\] {
+  --tw-saturate: saturate(.7);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
