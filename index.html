@@ -43,7 +43,9 @@
         outline: none;
         -webkit-tap-highlight-color: transparent;
       }
-
+main {
+  display: none;
+}
       #menu.expand {
         width: calc(100% - 72px);
       }
@@ -58,10 +60,15 @@
         }
       }
     </style>
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"
+  ></script>
     <title>ARC-CI Design</title>
   </head>
 
-  <body class="relative" onload="loader();">
+  <body onload="loader();">
     <header>
       <nav
         id="menu"
@@ -75,12 +82,12 @@
         <span
           class="py-4 text-center w-full text-xl font-montserrat font-semibold overflow-hidden md:basis-1/2 md:absolute md:left-10 md:text-left md:bottom-0 md:text-2xl md:w-fit"
         >
-          <a href="#Hero" >
+          <a href="#Hero">
             <span
-                class="text-transparent bg-gradient-to-r from-indigo-400 via-indigo-400 to-rose-700 bg-clip-text"
-                >ARC-CI
-              </span>
-              Design
+              class="text-transparent bg-gradient-to-r from-indigo-400 via-indigo-400 to-rose-700 bg-clip-text"
+              >ARC-CI
+            </span>
+            Design
           </a>
         </span>
         <ul
@@ -135,707 +142,745 @@
         </div>
       </div>
     </header>
-    <section class="h-full w-full p-0">
-      <div class="w-full h-screen bg-[#0F1624] m-0" id="Hero">
+    <main>
+      <section class="h-full w-full p-0">
+        <div class="w-full h-screen bg-[#0F1624] m-0" id="Hero">
+          <div
+            class="h-full flex justify-center items-center flex-col md:flex-row md:justify-evenly relative"
+          >
+            <div
+              id="isi_hero"
+              class="flex-col justify-center items-center z-10 opacity-0 block"
+            >
+              <h2
+                class="text-3xl pb-2 font-montserrat font-bold text-center text-platinum sm:text-4xl md:text-6xl md:pl-5 md:hidden"
+              >
+                <span
+                  class="text-transparent bg-gradient-to-r from-indigo-400 via-indigo-400 to-rose-700 bg-clip-text"
+                  >ARC-CI
+                </span>
+                Design
+              </h2>
+              <div
+                class="ml-0 left-0 md:pl-10 py-5 rounded-r-xl h-fit w-[400px]"
+              >
+                <h4
+                  class="text-slate-200 font-montserrat tracking-widest sm:text-2xl text-center md:text-left text-lg md:text-4xl font-bold"
+                >
+                  <span class="inline mb-3"> Let us help you as</span>
+
+                  <br class="inline md:hidden" />
+                  <div class="hidden md:mt-3"></div>
+
+                  <span
+                    class="auto-type2 border-b-4 border-solid rounded-b-sm border-[#00CED1] bg-[#353c4c] bg-opacity-50 px-2 font-mono"
+                  ></span>
+                  <br class="md:inline hidden" />
+                  consultant
+                </h4>
+
+                <button
+                  class="flex mt-5 mx-auto md:mx-0 justify-center items-center py-2 px-4 md:py-3 md:px-6 border border-solid border-platinum overflow-hidden relative group transition-all duration-300 hover:border-slate-800 active:scale-90"
+                >
+                  <span
+                    class="absolute top-full rounded-full w-[80%] h-[180%] bg-[#00ced1] group-hover:-top-3 transition-all duration-500 group-hover:scale-150"
+                    aria-hidden="true"
+                  >
+                  </span>
+
+                  <span
+                    class="font-montserrat text-sm md:text-base text-platinum group-hover:text-slate-800 group-hover:font-bold z-10 transition-all duration-500"
+                    >Get in touch</span
+                  >
+                </button>
+              </div>
+              <h4
+                class="text-lg font-light text-center text-slate-200 font-rubik tracking-wider sm:text-xl md:text-left md:text-2xl hidden"
+              >
+                Your
+
+                <span
+                  class="auto-type border-b-4 border-solid rounded-b-sm border-[#00CED1] bg-[#353c4c] px-2 font-medium"
+                ></span>
+                Consultant
+              </h4>
+            </div>
+
+            <img
+              id="logo"
+              src="./assets/images/hero.png"
+              alt="Logo"
+              class="w-[80%] h-auto top-1/2 absolute md:top-0 md:right-0 md:w-1/2 md:relative -z-0"
+            />
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-full md:hidden"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#0F1624"
+              fill-opacity="1"
+              d="M0,224L0,160L360,160L360,224L720,224L720,256L1080,256L1080,64L1440,64L1440,0L1080,0L1080,0L720,0L720,0L360,0L360,0L0,0L0,0Z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="hidden md:block lg:hidden"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#0F1624"
+              fill-opacity="1"
+              d="M0,256L0,224L160,224L160,160L320,160L320,32L480,32L480,288L640,288L640,64L800,64L800,256L960,256L960,192L1120,192L1120,64L1280,64L1280,32L1440,32L1440,0L1280,0L1280,0L1120,0L1120,0L960,0L960,0L800,0L800,0L640,0L640,0L480,0L480,0L320,0L320,0L160,0L160,0L0,0L0,0Z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="hidden lg:block"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#0F1624"
+              fill-opacity="1"
+              d="M0,128L0,160L102.9,160L102.9,224L205.7,224L205.7,128L308.6,128L308.6,64L411.4,64L411.4,0L514.3,0L514.3,64L617.1,64L617.1,0L720,0L720,96L822.9,96L822.9,160L925.7,160L925.7,32L1028.6,32L1028.6,224L1131.4,224L1131.4,256L1234.3,256L1234.3,0L1337.1,0L1337.1,64L1440,64L1440,0L1337.1,0L1337.1,0L1234.3,0L1234.3,0L1131.4,0L1131.4,0L1028.6,0L1028.6,0L925.7,0L925.7,0L822.9,0L822.9,0L720,0L720,0L617.1,0L617.1,0L514.3,0L514.3,0L411.4,0L411.4,0L308.6,0L308.6,0L205.7,0L205.7,0L102.9,0L102.9,0L0,0L0,0Z"
+            ></path>
+          </svg>
+        </div>
         <div
-          class="h-full flex justify-center items-center flex-col md:flex-row md:justify-evenly relative"
+          id="Home"
+          class="w-full h-fit pt-28 text-powder-blue md:pt-52 sm:pt-40 pb-20 bg-[#18233A] text-platinum z-10"
         >
           <div
-            id="isi_hero"
-            class="flex-col justify-center items-center z-10 opacity-0 block"
+            class="flex justify-center items-center mx-auto rounded-full p-8 border-4 border-[#00CED1] w-40 h-40 my-6"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-easing="ease-out"
           >
-            <h2
-              class="text-3xl pb-2 font-montserrat font-bold text-center text-platinum sm:text-4xl md:text-6xl md:pl-5 md:hidden"
+            <svg
+              class="w-full h-full"
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 576 512"
             >
-              <span
-                class="text-transparent bg-gradient-to-r from-indigo-400 via-indigo-400 to-rose-700 bg-clip-text"
-                >ARC-CI
-              </span>
-              Design
-            </h2>
-            <div class="ml-0 left-0 md:pl-10 py-5 rounded-r-xl h-fit w-[400px]">
-              <h4
-                class="text-slate-200 font-montserrat tracking-widest sm:text-2xl text-center md:text-left text-lg md:text-4xl font-bold"
-              >
-                <span class="inline mb-3"> Let us help you as</span>
-
-                <br class="inline md:hidden" />
-                <div class="hidden md:mt-3"></div>
-
-                <span
-                  class="auto-type2 border-b-4 border-solid rounded-b-sm border-[#00CED1] bg-[#353c4c] bg-opacity-50 px-2 font-mono"
-                ></span>
-                <br class="md:inline hidden" />
-                consultant
-              </h4>
-
-              <button
-                class="flex mt-5 mx-auto md:mx-0 justify-center items-center py-2 px-4 md:py-3 md:px-6 border border-solid border-platinum overflow-hidden relative group transition-all duration-300 hover:border-slate-800 active:scale-90"
-              >
-                <span
-                  class="absolute top-full rounded-full w-[80%] h-[180%] bg-[#00ced1] group-hover:-top-3 transition-all duration-500 group-hover:scale-150"
-                  aria-hidden="true"
-                >
-                </span>
-
-                <span
-                  class="font-montserrat text-sm md:text-base text-platinum group-hover:text-slate-800 group-hover:font-bold z-10 transition-all duration-500"
-                  >Get in touch</span
-                >
-              </button>
-            </div>
-            <h4
-              class="text-lg font-light text-center text-slate-200 font-rubik tracking-wider sm:text-xl md:text-left md:text-2xl hidden"
-            >
-              Your
-
-              <span
-                class="auto-type border-b-4 border-solid rounded-b-sm border-[#00CED1] bg-[#353c4c] px-2 font-medium"
-              ></span>
-              Consultant
-            </h4>
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                fill="#f43f5e"
+                d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"
+              />
+            </svg>
           </div>
-          
-          <img
-            id="logo"
-            src="./assets/images/hero.png"
-            alt="Logo"
-        class="w-[80%] h-auto top-1/2 absolute md:top-0 md:right-0 md:w-1/2 md:relative -z-0"
-          />
+          <div class="w-full px-10 font-rubik">
+            <h2
+              class="text-3xl pb-2 text-center font-semibold text-french-rose sm:text-4xl md:text-6xl mb-3"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              data-aos-delay="100"
+              data-aos-easing="ease-out"
+            >
+              Beranda
+            </h2>
+
+            <h3
+              class="font-montserrat text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              data-aos-easing="ease"
+            >
+              CV.
+              <span
+                class="font-semibold text-transparent bg-gradient-to-r from-indigo-400 via-indigo-400 to-rose-700 bg-clip-text"
+                >ARC-CI</span
+              >
+              Design
+            </h3>
+            <p
+              class="pt-3 text-md sm:text-xl"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              data-aos-delay="100"
+              data-aos-easing="ease"
+            >
+              Selamat datang di CV. ARC-CI Design! Kami adalah kontraktor yang
+              menawarkan layanan konsultasi perencanaan, desain, dan teknik.
+              Dengan tim ahli kami, kami siap membantu Anda mewujudkan proyek
+              impian Anda dengan solusi inovatif dan berkualitas tinggi. Hubungi
+              kami hari ini untuk mendiskusikan proyek Anda dan bagaimana kami
+              dapat membantu Anda mencapai tujuan Anda.
+            </p>
+          </div>
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-full md:hidden"
-          viewBox="0 0 1440 320"
-        >
-          <path
-            fill="#0F1624"
-            fill-opacity="1"
-            d="M0,224L0,160L360,160L360,224L720,224L720,256L1080,256L1080,64L1440,64L1440,0L1080,0L1080,0L720,0L720,0L360,0L360,0L0,0L0,0Z"
-          ></path>
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="hidden md:block lg:hidden"
-          viewBox="0 0 1440 320"
-        >
-          <path
-            fill="#0F1624"
-            fill-opacity="1"
-            d="M0,256L0,224L160,224L160,160L320,160L320,32L480,32L480,288L640,288L640,64L800,64L800,256L960,256L960,192L1120,192L1120,64L1280,64L1280,32L1440,32L1440,0L1280,0L1280,0L1120,0L1120,0L960,0L960,0L800,0L800,0L640,0L640,0L480,0L480,0L320,0L320,0L160,0L160,0L0,0L0,0Z"
-          ></path>
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="hidden lg:block"
-          viewBox="0 0 1440 320"
-        >
-          <path
-            fill="#0F1624"
-            fill-opacity="1"
-            d="M0,128L0,160L102.9,160L102.9,224L205.7,224L205.7,128L308.6,128L308.6,64L411.4,64L411.4,0L514.3,0L514.3,64L617.1,64L617.1,0L720,0L720,96L822.9,96L822.9,160L925.7,160L925.7,32L1028.6,32L1028.6,224L1131.4,224L1131.4,256L1234.3,256L1234.3,0L1337.1,0L1337.1,64L1440,64L1440,0L1337.1,0L1337.1,0L1234.3,0L1234.3,0L1131.4,0L1131.4,0L1028.6,0L1028.6,0L925.7,0L925.7,0L822.9,0L822.9,0L720,0L720,0L617.1,0L617.1,0L514.3,0L514.3,0L411.4,0L411.4,0L308.6,0L308.6,0L205.7,0L205.7,0L102.9,0L102.9,0L0,0L0,0Z"
-          ></path>
-        </svg>
-      </div>
-      <div
-        id="Home"
-        class="w-full h-fit pt-28 text-powder-blue md:pt-52 sm:pt-40 pb-20 bg-[#18233A] text-platinum z-10"
+      </section>
+      <hr
+        class="border-t-2 border-[#6FC0FF] w-1/3 bg-transparent absolute left-1/2 -translate-x-1/2"
+      />
+      <section
+        id="Portfolio"
+        class="self-center h-fit px-10 py-5 font-rubik font-medium pt-[65px] flex flex-col justify-center bg-[#18233A] text-platinum"
       >
-      <div
-        class="flex justify-center items-center mx-auto rounded-full p-8 border-4 border-[#00CED1] w-40 h-40 my-6"
-        data-aos="fade-down"
-        data-aos-duration="1000"
-        data-aos-once="true"
-        data-aos-easing="ease-out"
-      >
-      <svg class="w-full h-full " xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="#f43f5e" d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
-      </div>
-        <div class="w-full px-10 font-rubik">
-          <h2
-          class="text-3xl pb-2 text-center font-semibold text-french-rose sm:text-4xl md:text-6xl mb-3"
+        <div
+          class="flex justify-center items-center mx-auto rounded-full p-5 border-4 border-[#00CED1] w-40 h-40 my-6"
           data-aos="fade-down"
           data-aos-duration="1000"
           data-aos-once="true"
-          data-aos-delay="100"
           data-aos-easing="ease-out"
         >
-          Beranda
-        </h2>
-
-          <h3
-            class="font-montserrat text-xl sm:text-2xl md:text-3xl lg:text-4xl"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-once="true"
-            data-aos-easing="ease"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+            class="w-full h-full ml-3"
           >
-            CV.
-            <span
-              class="font-semibold text-transparent bg-gradient-to-r from-indigo-400 via-indigo-400 to-rose-700 bg-clip-text"
-              >ARC-CI</span
-            >
-            Design
-          </h3>
-          <p
-            class="pt-3 text-md sm:text-xl"
-            data-aos="fade-right"
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              fill="#f43f5e"
+              d="M88.7 223.8L0 375.8V96C0 60.7 28.7 32 64 32H181.5c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7H416c35.3 0 64 28.7 64 64v32H144c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224H544c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480H32c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z"
+            />
+          </svg>
+        </div>
+        <div class="container mx-auto">
+          <h2
+            class="text-3xl pb-2 text-center font-semibold text-french-rose sm:text-4xl md:text-6xl mb-3"
+            data-aos="fade-down"
             data-aos-duration="1000"
             data-aos-once="true"
             data-aos-delay="100"
-            data-aos-easing="ease"
+            data-aos-easing="ease-out"
           >
-          Selamat datang di CV. ARC-CI Design! Kami adalah kontraktor yang menawarkan layanan konsultasi perencanaan, desain, dan teknik. Dengan tim ahli kami, kami siap membantu Anda mewujudkan proyek impian Anda dengan solusi inovatif dan berkualitas tinggi. Hubungi kami hari ini untuk mendiskusikan proyek Anda dan bagaimana kami dapat membantu Anda mencapai tujuan Anda.
+            Proyek
+          </h2>
+          <p class="text-slate-200">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            aspernatur temporibus maiores. Dignissimos inventore provident,
+            necessitatibus tenetur natus vitae quod repellendus expedita aperiam
+            totam eveniet id velit quos porro, eos fugiat ab consequuntur sequi
+            repellat doloremque odio. Est, ratione consequuntur?
           </p>
-        </div>
-      </div>
-    </section>
-    <hr
-      class="border-t-2 border-[#6FC0FF] w-1/3 bg-transparent absolute left-1/2 -translate-x-1/2"
-    />
-    <section
-      id="Portfolio"
-      class="self-center h-fit px-10 py-5 font-rubik font-medium pt-[65px] flex flex-col justify-center bg-[#18233A] text-platinum"
-    >
-      <div
-        class="flex justify-center items-center mx-auto rounded-full p-5 border-4 border-[#00CED1] w-40 h-40 my-6"
-        data-aos="fade-down"
-        data-aos-duration="1000"
-        data-aos-once="true"
-        data-aos-easing="ease-out"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 576 512"
-          class="w-full h-full ml-3"
-        >
-          <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-          <path
-            fill="#f43f5e"
-            d="M88.7 223.8L0 375.8V96C0 60.7 28.7 32 64 32H181.5c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7H416c35.3 0 64 28.7 64 64v32H144c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224H544c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480H32c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z"
-          />
-        </svg>
-      </div>
-      <div class="container mx-auto">
-        <h2
-          class="text-3xl pb-2 text-center font-semibold text-french-rose sm:text-4xl md:text-6xl mb-3"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          data-aos-delay="100"
-          data-aos-easing="ease-out"
-        >
-          Proyek
-        </h2>
-        <p class="text-slate-200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          aspernatur temporibus maiores. Dignissimos inventore provident,
-          necessitatibus tenetur natus vitae quod repellendus expedita aperiam
-          totam eveniet id velit quos porro, eos fugiat ab consequuntur sequi
-          repellat doloremque odio. Est, ratione consequuntur?
-        </p>
 
-        <div class="slide-container mt-10 max-w-6xl w-full py-10 swiper">
-          <div class="slide-content mx-10 slide overflow-hidden rounded-3xl">
-            <div class="card-wrapper swiper-wrapper">
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+          <div class="slide-container mt-10 max-w-6xl w-full py-10 swiper">
+            <div class="slide-content mx-10 slide overflow-hidden rounded-3xl">
+              <div class="card-wrapper swiper-wrapper">
+                <div
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
+                >
+                  <div
+                    class="image-content flex flex-col items-center relative"
+                  >
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 1</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 1</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 2</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 2</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 3</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 3</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 4</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#00ced1] px-3 text-slate-300 hover:bg-[#6FC0FF] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 4</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#00ced1] px-3 text-slate-300 hover:bg-[#6FC0FF] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 5</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 5</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 6</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 6</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 7</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 7</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 8</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 8</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 9</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 9</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 10</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 10</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  >
+                    <h2 class="font-fira font-medium text-xl">Proyek 11</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
                     >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                      Lihat Detail
+                    </button>
                   </div>
                 </div>
                 <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
+                  class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
                 >
-                  <h2 class="font-fira font-medium text-xl">Proyek 11</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="image-content flex flex-col items-center relative"
                   >
-                    Lihat Detail
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-3xl bg-[#1E2B48] overflow-hidden swiper-slide"
-              >
-                <div class="image-content flex flex-col items-center relative">
-                  <div class="relative h-auto w-full bg-[#1E2B48]">
-                    <img
-                      src="https://source.unsplash.com/1000x600?digital"
-                      alt=""
-                      class="object-cover h-60 w-full"
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1440 320"
-                      class="absolute bottom-0"
-                    >
-                      <path
-                        fill="#1E2B48"
-                        fill-opacity="1"
-                        d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
-                      ></path>
-                    </svg>
+                    <div class="relative h-auto w-full bg-[#1E2B48]">
+                      <img
+                        src="https://source.unsplash.com/1000x600?digital"
+                        alt=""
+                        class="object-cover h-60 w-full"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                        class="absolute bottom-0"
+                      >
+                        <path
+                          fill="#1E2B48"
+                          fill-opacity="1"
+                          d="M0,320L0,32L180,32L180,224L360,224L360,160L540,160L540,288L720,288L720,160L900,160L900,96L1080,96L1080,224L1260,224L1260,0L1440,0L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"
+                        ></path>
+                      </svg>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
-                >
-                  <h2 class="font-fira font-medium text-xl">Proyek 12</h2>
-                  <p class="desc font-rubik text-sm mb-4 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Totam doloribus odit temporibus at, eius ducimus optio.
-                    Nobis error assumenda non?
-                  </p>
-                  <button
-                    class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                  <div
+                    class="card-content py-[10px] px-[14px] flex flex-col items-center text-platinum rounded-3xl rounded-tl-none"
                   >
-                    Lihat Detail
-                  </button>
+                    <h2 class="font-fira font-medium text-xl">Proyek 12</h2>
+                    <p class="desc font-rubik text-sm mb-4 text-center">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Totam doloribus odit temporibus at, eius ducimus optio.
+                      Nobis error assumenda non?
+                    </p>
+                    <button
+                      class="mb-5 py-2 bg-[#0070E0] rounded-lg px-3 text-slate-300 hover:bg-[#0052A3] transition-colors"
+                    >
+                      Lihat Detail
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-button-next flex swiper-navBtn"></div>
-          <div class="swiper-button-prev flex swiper-navBtn"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-    <section id="About" class="h-screen bg-[#1E2B48] p-0 pt-[65px]">
-      <div class="kartu">
-        <div class="card__content">
-          <div class="card__content-inner">
-            <div class="card__title">Azhar Rosied</div>
-            <div class="card__description">Insinyur</div>
+            <div class="swiper-button-next flex swiper-navBtn"></div>
+            <div class="swiper-button-prev flex swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-      </div>
-      
-    </section>
+      </section>
+      <section id="About" class="h-screen bg-[#1E2B48] p-0 pt-[65px]">
+        <div class="kartu">
+          <div class="card__content">
+            <div class="card__content-inner">
+              <div class="card__title">Azhar Rosied</div>
+              <div class="card__description">Insinyur</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./src/js/9.4.1_swiper-bundle.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
+    
 
     <script src="./src/js/main.js"></script>
   </body>
